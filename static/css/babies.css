@@ -1,0 +1,22 @@
+.head-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.title, .title > input {
+    font-size: 30px;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.baby-img-box {
+    display: inline-block;
+    width: 40%;
+    min-width: 300px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
