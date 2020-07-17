@@ -7,11 +7,13 @@
 
     <body>
         <div class="head-container">
-            <span class="title">Babies of Day #<input type="text" value="100" size="3"/></span>
+            <span class="title">Babies of Day #<input id="day-input" type="number" value="{{ startup_day }}" /></span>
         </div>
         <div class="main-container">
-            <span class="baby-img-box"><img src="/static/{{ secret_path }}/photos/brytny-com-C4rXIFSzEXk-unsplash.jpg"/></span>
-            <span class="baby-img-box"><img src="/static/{{ secret_path }}/photos/kelly-sikkema-If7eM-f7Ehg-unsplash.jpg"/></span>
+            <span class="baby-img-box"><img id="left-img" /></span>
+            <span class="baby-img-box"><img id="right-img" /></span>
         </div>
+        <script src="/babies/{{ secret_path }}/data.js"></script>
+        <script src="/static/{{ secret_path }}/js/babies.js"></script>
     <body>
 </html>
