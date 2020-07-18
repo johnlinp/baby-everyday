@@ -29,6 +29,7 @@
     };
 
     dayInput.addEventListener('change', updateImgUrl);
+    dayInput.focus();
 
     updateImgUrl();
     setLimitOnDayInput();
