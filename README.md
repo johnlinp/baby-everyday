@@ -37,4 +37,3 @@ There are several environment variables to config:
 1. `LEFT_BIRTHDAY`: The birthday of your first baby. Will auto detect if not set.
 1. `RIGHT_BIRTHDAY`: The birthday of your second baby. Will auto detect if not set.
 1. `PHOTOAGE_OFFSET`: Apply an offset to the cutting point. Defaults to `12:00:00`.
-1. `PHOTOAGE_ENABLE_STAT`: Whether to use `stat` to detect the taken date of the photo. Defaults to `false`.
