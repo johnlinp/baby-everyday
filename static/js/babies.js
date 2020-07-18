@@ -10,6 +10,7 @@
     };
 
     var updateImgUrlInner = function(day, img, mapping) {
+        img.setAttribute('src', '');
         if (mapping.hasOwnProperty(day)) {
             img.setAttribute('src', mapping[day]);
         } else {
