@@ -32,6 +32,7 @@ Please go to <https://baby-everyday.herokuapp.com/babies/771AB247-A099-4F64-BD01
 
 There are several environment variables to config:
 
+1. `WEBPAGE_TITLE`: The title of the webpage.
 1. `SECRET_PATH`: You can use it to protect your babies photos if you don't want everyone to see them. Setting `SECRET_PATH` will change the URL from `/babies` to `/babies/<SECRET_PATH>`.
 1. `STARTUP_DAY`: The days showing up when open the web page. Defaults to `0`.
 1. `LEFT_BIRTHDAY`: The birthday of your first baby. Will auto detect if not set.

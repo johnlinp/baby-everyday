@@ -4,6 +4,7 @@ import flask
 import photoage
 
 
+WEBPAGE_TITLE = os.getenv('WEBPAGE_TITLE', 'Baby Everyday')
 SECRET_PATH = os.getenv('SECRET_PATH', '')
 STARTUP_DAY = int(os.getenv('STARTUP_DAY', '0'))
 LEFT_BIRTHDAY = os.getenv('LEFT_BIRTHDAY')
@@ -60,12 +61,12 @@ sorry_url = get_sorry_url()
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    return flask.render_template('index.html', title=WEBPAGE_TITLE)
 
 
 @app.route(f'/babies/{SECRET_PATH}')
 def babies():
-    return flask.render_template('babies.html', secret_path=SECRET_PATH, startup_day=STARTUP_DAY)
+    return flask.render_template('babies.html', title=WEBPAGE_TITLE, secret_path=SECRET_PATH, startup_day=STARTUP_DAY)
 
 
 @app.route(f'/babies/{SECRET_PATH}/data.js')
